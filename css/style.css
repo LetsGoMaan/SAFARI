@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #1f1e1e;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 0 49px;
+}
+
+.header__phone {
+  font-size: 16px;
+  line-height: 130%;
+  color: #fff;
+  font-weight: 700;
+}
+
+.header__phone-number {
+  font-weight: 400;
+  margin-left: 19px;
+  padding: 12px 31px 13px;
+  background: #886239;
+  border-radius: 22px;
+}
+
+.menu {
+  width: 100%;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  margin-top: 15px;
+  padding: 27px 0 24px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+.header__title {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 130%;
+  text-align: center;
+  margin-bottom: auto;
+}
+
+.header_descr {
+  font-weight: 700;
+  font-size: 20px;
+  max-width: 420px;
+  margin-bottom: 100px;
+}
+
+.header__btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  padding: 19px 55px 20px;
+  background: #886239;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.header__arrow {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.direction {
+  padding: 100px 0;
+}
+
+.direction__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+}
+
+.direction__img {
+  display: block;
+}
+
+.description__text {
+  font-size: 16px;
+  border: 1px solid #d9d9de;
+  border-top: none;
+  padding: 10px 19px 14px;
+}
