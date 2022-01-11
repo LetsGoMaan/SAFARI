@@ -489,3 +489,268 @@ a {
 .footer__mail {
   display: block;
 }
+
+.menu__btn {
+  display: none;
+}
+
+@media (max-width: 1140px) {
+  .direction__inner {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  .direction__img {
+    width: 100%;
+  }
+  .about__inner {
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .gallery__item-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery__item-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 990px) {
+  .popular__link {
+    min-height: 200px;
+  }
+
+  .popular__items {
+    grid-gap: 10px;
+  }
+
+  .tour__info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__phone span {
+    display: none;
+  }
+
+  .travel-info__items {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+  .popular__link:nth-child(3),
+  .popular__link:nth-child(6) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .popular__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .popular__link {
+    min-height: 320px;
+  }
+  .popular {
+    padding: 50px 0;
+  }
+  .map {
+    padding-bottom: 50px;
+  }
+  .map__iframe {
+    height: 400px;
+  }
+  .about__inner {
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .about__popup {
+    min-height: 400px;
+  }
+  .about {
+    padding-bottom: 50px;
+  }
+  .gallery {
+    padding-bottom: 50px;
+  }
+
+  .tour {
+    padding: 50px 0;
+  }
+
+  .tour__box {
+    column-count: 1;
+  }
+
+  .tour__title {
+    margin-bottom: 40px;
+  }
+
+  .tour__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .booking {
+    padding: 50px 0;
+  }
+  .booking__input {
+    width: 100%;
+  }
+
+  .booking__label {
+    margin-top: -192px;
+    margin-left: 50px;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+
+  .footer__box {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__info {
+    margin: 0 auto 25px;
+  }
+
+  .footer__address {
+    margin: 0 auto 25px;
+  }
+
+  .footer__contacts {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .header__title {
+    font-size: 50px;
+  }
+  .menu__btn {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 107px;
+  }
+  .menu__btn::after,
+  .menu__btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .menu__btn::before {
+    top: 0;
+  }
+
+  .menu__btn::after {
+    bottom: 0;
+  }
+
+  .menu__btn span {
+    display: block;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .menu__list {
+    transform: translateY(-200%);
+    display: block;
+    background-color: #886239;
+    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: all 0.3s;
+  }
+
+  .menu__list.menu__list--active {
+    transform: translate(0%);
+  }
+  .menu__link {
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .header__phone-number {
+    margin-left: 0;
+  }
+
+  .menu {
+    border: none;
+  }
+
+  .direction__inner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .direction {
+    padding: 50px 0;
+  }
+
+  .travel-info__items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+  .popular__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery__item-inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery__title {
+    width: 100%;
+    text-align: left;
+  }
+  .gallery__top {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 460px) {
+  .travel-info__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .direction__inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tour__info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 340px) {
+  .about__popup {
+    min-height: 280px;
+  }
+}
